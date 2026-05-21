@@ -14,10 +14,10 @@ enum class CategoriaCurso {
     Design
 }
 
-data class Curso(
+data class Cursos(
     val id: Int,
     val titulo: String,
     val cargaHoraria: Int,
-    val nivel: NivelCurso,
-    val categoria: CategoriaCurso
+    val nivel: String?,
+    val categoria: String?
 )

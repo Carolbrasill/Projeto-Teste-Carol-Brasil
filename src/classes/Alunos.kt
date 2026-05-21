@@ -6,9 +6,10 @@ enum class SituacaoAluno {
     Bloqueado
 }
 
-data class Aluno(
+data class Alunos
+    (
     val id: Int,
     val nome: String,
     val email: String,
-    var situacao: SituacaoAluno = SituacaoAluno.Ativo
+    var situacao: String = SituacaoAluno.Ativo.toString()
 )
